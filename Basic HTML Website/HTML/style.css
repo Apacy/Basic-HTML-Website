@@ -1,0 +1,90 @@
+* {
+    
+    font-family: "SUSE Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+  }
+
+  .header{
+    overflow:hidden;
+    padding: 20px 10px;
+    border: 2px solid black;
+    border-bottom:none;
+    
+  }
+
+  .header a{
+    float:left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size:18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+  .header-right{
+    float:right;
+  }
+  
+  .hero{
+    text-align: center;
+    max-height:400px;
+    padding: 8%;
+    border: 2px solid black;
+    border-top:none;
+    border-bottom: none;
+    font-size: 1.5rem
+  }
+  .hero > p{
+    font-size: 1rem;
+  }
+  
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap:10px;
+    border: 2px solid black;
+    column-gap: 0;
+  }
+
+  .container > div {
+    border-right: 2px solid black;
+  }
+  .container > div:last-child{
+    border-right: none;
+  }
+  
+  .container h3{
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+
+  .projects ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+  }
+  .projects li{
+    padding: 8px 8px 8px 24px;
+    border-bottom: 2px solid black;
+  }
+
+  .projects li:last-child, .job:last-child{
+    border-bottom: none;
+  }
+
+  .job{
+    border-bottom: 2px solid black;
+    padding: 0 8px 8px 24px;
+    margin-bottom: 10px;
+  }
+
+  /* Finish off Education, Reviews
+    Finish off every page look
+    Add mobile adaptation */
+

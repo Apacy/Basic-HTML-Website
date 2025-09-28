@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-     <nav>
-        <img
-        src="#"
-        alt="logo"
-        width="30px"
-        height="30px" 
-        />
-        <h4>Viacheslav Ch.</h4>
-        <ul style="list-style: none;">
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./articles.html">Articles</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-     </nav>
-     
-     <main>
+    <div class="header">
+        <nav>
+            <a href="#" class="logo">Viacheslav Ch.</a>
+            <div class="header-right">
+                <ul>
+                    <a href="./home.html">Home <span>&#47;</span></a>
+                    <a href="./projects.html">Projects <span>&#47;</span></a>
+                    <a href="./articles.html">Articles <span>&#47;</span></a>
+                    <a href="./contact.html">Contact</a>
+
+            </div>
+        </nav>
+    </div>
+    <main>
+
         <!-- Hero Section -->
-         <section id="hero">
-            <div class="subheading">
+        <section>
+            <div class="hero">
                 <h1>Frontend Developer</h1>
                 <p>html only with proper layout, no styling</p>
             </div>
-         </section>
-         
-         <!-- Projects -->
-         <section id="projects">
-            <div class="subheading">
-                <h3>Projects</h3>
-            </div>
-                <!-- Project List -->
-                <div>
-                    <ul>
-                        <li><a href="#">HTML Only Portfolio</a></li>
-                        <li><a href="#">Calculator</a></li>
-                        <li><a href="#">Quiz App</a></li>
-                        <li><a href="#">Countdown Timer</a></li>
-                        <li><a href="#">Product Upcoming Page</a></li>
-                    </ul>
-                </div>
-         </section>
-    </main>
-    <footer>
-        <h6>@all rights reserved 2025</h6>
-    </footer>
-</body>
-</html>     
+        </section>
 
+        <section class="container">
+            <div class="projects">
+              <h3>Projects</h3>
+              <ul>
+                <li>HTML Only Portfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Countdown Timer</li>
+                <li>Product Upcoming Page</li>
+              </ul>
+            </div>
+          </section>
+
+    </main>
+</body>
+
+</html>

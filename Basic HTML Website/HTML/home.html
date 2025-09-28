@@ -1,125 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic HTML Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <!-- Navigation -->
-     <nav>
-        <img
-        src="#"
-        alt="logo"
-        width="30px"
-        height="30px" 
-        />
-        <h4>Viacheslav Ch.</h4>
-        <ul style="list-style: none;">
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./projects.html">Projects</a></li>
-            <li><a href="./articles.html">Articles</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-     </nav>
-     
-     <main>
+    <div class="header">
+        <nav>
+            <a href="#" class="logo">Viacheslav Ch.</a>
+            <div class="header-right">
+                <ul>
+                    <a href="./home.html">Home <span>&#47;</span></a>
+                    <a href="./projects.html">Projects <span>&#47;</span></a>
+                    <a href="./articles.html">Articles <span>&#47;</span></a>
+                    <a href="./contact.html">Contact</a>
+
+            </div>
+        </nav>
+    </div>
+    <main>
+
         <!-- Hero Section -->
-         <section id="hero">
-            <div class="subheading">
+        <section>
+            <div class="hero">
                 <h1>Frontend Developer</h1>
                 <p>html only with proper layout, no styling</p>
             </div>
-         </section>
+        </section>
 
-         <!-- Projects -->
-         <section id="projects">
-            <div class="subheading">
-                <h3>Projects</h3>
+        <section class="container">
+            <div class="projects">
+              <h3>Projects</h3>
+              <ul>
+                <li>HTML Only Portfolio</li>
+                <li>Calculator</li>
+                <li>Quiz App</li>
+                <li>Countdown Timer</li>
+                <li>Product Upcoming Page</li>
+              </ul>
             </div>
-                <!-- Project List -->
-                <div>
-                    <ul>
-                        <li><a href="#">HTML Only Portfolio</a></li>
-                        <li><a href="#">Calculator</a></li>
-                        <li><a href="#">Quiz App</a></li>
-                        <li><a href="#">Countdown Timer</a></li>
-                        <li><a href="#">Product Upcoming Page</a></li>
-                    </ul>
-                </div>
-         </section>
-
-         <!-- Work Experience -->
-          <section id="experience">
-            <div class="subheading">
-                <h3>Work Experience</h3>
+          
+            <div class="work">
+              <h3>Work Experience</h3>
+              <div class="job">
+                <h4>roadmap.sh</h4>
+                <p>Solved all the frontend projects</p>
+                <a href="#">Visit my Profile</a>
+              </div>
+              <div class="job">
+                <h4>OpenSource Work</h4>
+                <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars.</p>
+                <a href="#">Visit my GitHub Profile</a>
+              </div>
             </div>
-                <div>
-                    <h5>roadmap.sh</h5>
-                    <p>Solved all the fronedn projects</p>
-                 <a href="https://www.roadmap.sh" target="_blank">Visit my Profile</a>
-                </div>
-                 <div>
-                    <h5>Open Source Work</h5>
-                    <p>Contrubyred to 50 opensource projects. Made my own project with 200 GitHub Stars.</p>
-                     <a href="https://github.com/Apacy" target="_blank">Visit my GitHub Profile</a>
-                 </div>
+          
+            <div class="education">
+              <h3>Education</h3>
+              <p>Graduated with 3.76 out of 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
+              <h4>Courses I took:</h4>
+              <ul>
+                <li>Object Oriented Programming</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Engineering</li>
+                <li>Artificial Intelligence</li>
+                <li>Human Computer Interaction</li>
+                <li>Computer Graphics</li>
+                <li>Database Management Systems</li>
+                <li>Distributed Database Systems</li>
+                <li>Discrete Mathematics</li>
+              </ul>
+            </div>
           </section>
 
-          <!-- Education -->
-          <section id="education">
-            <div class="subheading">
-                <h3>Education</h3>
+        <!-- Reviews from my Teachers -->
+        <section id="reviews">
+            <div class="reviews">
+                <h3>Reviews from my Teachers</h3>
             </div>
-                <div>
-                    <p>Graduated with 3.76 out 4 CGPA. Won Acme Hackathon. Organized 30 sessions.</p>
-                    <ul>
-                        <p>Courses i took:</p>
-                        <li>Object Oriented Programming</li>
-                        <li>Data Structures and Algorithms</li>
-                        <li>Web Engeneering</li>
-                        <li>Artificial Intelegence</li>
-                        <li>Human Computer Interaction</li>
-                        <li>Computer Graphics</li>
-                        <li>Database Management Systems</li>
-                        <li>Distributed Database Systems</li>
-                        <li>Discreet Mathematics</li>
-                    </ul>
-                </div>
-          </section>
+            <!-- Teacher 1 -->
+            <div>
+                <p>Viacheslav Ch. was a brilliant student; always stood out with his assignments.</p>
+                <h5>Jane Doe<br>
+                    Assistant Proffessor
+                </h5>
+            </div>
+            <!-- Teacher 2 -->
+            <div>
+                <p>Viacheslav Ch. was a brilliant student; always stood out with his assignments.</p>
+                <h5>Jane Doe<br>
+                    Assistant Proffessor
+                </h5>
+            </div>
+            <!-- Teacher 3 -->
+            <div>
+                <p>Viacheslav Ch. was a brilliant student; always stood out with his assignments.</p>
+                <h5>Jane Doe<br>
+                    Assistant Proffessor
+                </h5>
+            </div>
 
-          <!-- Reviews from my Teachers -->
-           <section id="reviews">
-                <div class="subheading">
-                    <h3>Reviews from my Teachers</h3>
-                </div>
-                <!-- Teacher 1 -->
-                    <div>
-                        <p>Viacheslav Ch. was a brilliant student; always stood out with his assignments.</p>
-                        <h5>Jane Doe<br>
-                            Assistant Proffessor
-                        </h5>
-                    </div>
-                <!-- Teacher 2 -->
-                    <div>
-                        <p>Viacheslav Ch. was a brilliant student; always stood out with his assignments.</p>
-                        <h5>Jane Doe<br>
-                            Assistant Proffessor
-                        </h5>
-                    </div>
-                <!-- Teacher 3 -->
-                    <div>
-                        <p>Viacheslav Ch. was a brilliant student; always stood out with his assignments.</p>
-                        <h5>Jane Doe<br>
-                            Assistant Proffessor
-                        </h5>
-                    </div>
-
-           </section>
-     </main>
-    <footer>
-        <h6>@all rights reserved 2025</h6>
-    </footer>
+        </section>
+    </main>
 </body>
 
 </html>
