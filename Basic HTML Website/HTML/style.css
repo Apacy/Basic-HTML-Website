@@ -43,13 +43,14 @@
     font-size: 1rem;
   }
   
-
+/* Container */
   .container{
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 1.5fr;
     gap:10px;
     border: 2px solid black;
     column-gap: 0;
+    border-bottom: 0;
   }
 
   .container > div {
@@ -64,6 +65,37 @@
     padding-left: 20px;
   }
 
+  /* Project Page */
+  .project-container{
+    border: 2px solid black;
+  }
+
+  .project-container h3{
+    text-align: center;
+    font-size:28px;
+  }
+  
+  /* Article Page */
+  .blog{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:20px;
+    column-gap: 0;
+  }
+
+  .blog li{
+    text-decoration: none;
+  }
+
+  .article{
+    border: 2px solid black;
+    border-radius: 36px;
+    padding:20px;
+    margin: 20px;
+    width:300px;
+  }
+
+  /* Projects */
   .projects ul{
     list-style: none;
     padding:0;
@@ -78,13 +110,67 @@
     border-bottom: none;
   }
 
+  /* Job */
   .job{
     border-bottom: 2px solid black;
     padding: 0 8px 8px 24px;
     margin-bottom: 10px;
   }
 
-  /* Finish off Education, Reviews
+  .job > a {
+    text-decoration: none;
+  }
+
+  /* Education */
+  .education{
+    margin-left: 8px;
+    padding-left:8px;
+  }
+  .education > h3 {
+    padding: 0;
+  }
+  .education ul{
+    list-style-type: "-";
+    padding-left: 16px;
+  }
+
+  /* Reviews */
+  .testimonials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    column-gap: 0;
+  }
+
+  .review{
+    border: 2px solid black;
+    border-radius: 36px;
+    padding:20px;
+    margin: 20px;
+    width:300px;
+  }
+
+  .review > h5{
+    color: gray;
+  }
+
+  /* Review Container  */
+  .container-bottom{
+    border: 2px solid black;
+  }
+  .container-bottom h3 {
+    padding-left: 22px;
+    font-size:24px;
+  }
+  /* Footer */
+  footer{
+    display:flex;
+    justify-content: space-around;
+    margin-top: 150px;
+    padding-bottom: 100px;
+    font-size:28px;
+  }
+  /* 
     Finish off every page look
     Add mobile adaptation */
 
