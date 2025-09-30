@@ -70,29 +70,40 @@
     border: 2px solid black;
   }
 
-  .project-container h3{
+  .project-container h3, .contact-heading{
     text-align: center;
     font-size:28px;
   }
   
-  /* Article Page */
-  .blog{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap:20px;
-    column-gap: 0;
+  .subheading > h3{
+    text-align: center;
+    font-size:28px;
   }
 
-  .blog li{
+  /* Contact */
+  .contact-form{
+    padding: 0px 36px 0 36px;
+  }
+  .contact-form input, textarea{
+    width: 100%;
+    padding:8px;
+  }
+  .contact-form textarea{
+    resize:none;
+    height:100px;
+  }
+  .contact-form > p{
+    text-align: center;
+  }
+  .contact-form a{
     text-decoration: none;
   }
 
-  .article{
-    border: 2px solid black;
-    border-radius: 36px;
-    padding:20px;
-    margin: 20px;
-    width:300px;
+  .btn{
+    display: block;
+    margin:auto;
+    padding-top: 20px;
+    max-width: 150px;
   }
 
   /* Projects */
@@ -160,7 +171,6 @@
   }
   .container-bottom h3 {
     padding-left: 22px;
-    font-size:24px;
   }
   /* Footer */
   footer{
